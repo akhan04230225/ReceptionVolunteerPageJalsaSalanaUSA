@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guest Reception Jalsa Salana USA 2025</title>
+    <title>Guest Reception Duties Jalsa Salana 2025</title>
     <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <style>
-<<<<<<< 312rgi-codex/create-modern-ux-for-guest-reception-page
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -44,13 +43,13 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             font-size: 1.2rem;
         }
-=======
-        body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f9f9f9; }
-        header { display: flex; justify-content: space-between; align-items: center; background: #002855; color: white; padding: 1rem; }
-        header .links a { color: white; margin-left: 1rem; text-decoration: none; font-weight: bold; }
-        header .links a:hover { text-decoration: underline; }
-        .purpose { padding: 1rem; background: #ffffff; margin: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
->>>>>>> main
+        .announcements {
+            padding: 1rem;
+            background: #ffffff;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
         .slideshow { position: relative; height: 300px; overflow: hidden; margin: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background:#000; }
         .slides img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1s ease-in-out; }
         .slides img.active { opacity: 1; }
@@ -84,7 +83,7 @@
             return (
                 <div>
                     <header>
-                        <div className="title">Guest Reception Jalsa Salana USA 2025</div>
+                        <div className="title">Guest Reception Duties Jalsa Salana 2025</div>
                         <div className="links">
                             <a href="https://jalsaschedulesystem.onrender.com/" target="_blank" rel="noopener noreferrer">Login / Register</a>
                             <a href="https://jalsaschedulesystem.onrender.com/consent.html" target="_blank" rel="noopener noreferrer">Consent Page</a>
@@ -95,6 +94,14 @@
                     </section>
                     <section className="slideshow">
                         <SlideShow />
+                    </section>
+                    <section className="announcements">
+                        <h2>Annoucements</h2>
+                        <ul>
+                            <li>Please arrive 15 minutes before your shift.</li>
+                            <li>Check in at the reception desk upon arrival.</li>
+                            <li>Contact your team lead with any questions.</li>
+                        </ul>
                     </section>
                 </div>
             );
