@@ -52,7 +52,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             max-width: 300px;
-            margin-left: auto;
+            margin-left: 0;
         }
         .services {
             padding: 1rem;
@@ -61,7 +61,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             max-width: 300px;
-            margin-left: auto;
+            margin-left: 0;
         }
         .announcements {
             padding: 1rem;
@@ -70,9 +70,11 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .slideshow { position: relative; height: 300px; overflow: hidden; margin: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background:#000; }
+        .slideshow { position: relative; height: 300px; width: 300px; overflow: hidden; margin: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background:#000; }
         .slides img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1s ease-in-out; }
         .slides img.active { opacity: 1; }
+        .info-block { display: flex; align-items: flex-start; flex-wrap: wrap; }
+        .right-column { display: flex; flex-direction: column; margin-left: auto; }
     </style>
 </head>
 <body>
@@ -112,23 +114,27 @@
                     <section className="purpose">
                         <p>To receive and welcome guests who will attend Jalsa Salana USA 2025, Richmond and welcome them. We will achieve to give our guests the best experience they can ever have while attending our convention.</p>
                     </section>
-                    <section className="contact-info">
-                        <h3>Director of Guest Reception</h3>
-                        <p>Ahmed Khan</p>
-                        <p>Email: <a href="mailto:ahmed.khan@ahmadiyya.us">ahmed.khan@ahmadiyya.us</a></p>
-                        <p>Phone: 765-437-2876</p>
-                    </section>
-                    <section className="services">
-                        <h3>Services Provided</h3>
-                        <ul>
-                            <li>Registration</li>
-                            <li>Guided tour</li>
-                            <li>Information Packet</li>
-                        </ul>
-                    </section>
-                    <section className="slideshow">
-                        <SlideShow />
-                    </section>
+                    <div className="info-block">
+                        <section className="slideshow">
+                            <SlideShow />
+                        </section>
+                        <div className="right-column">
+                            <section className="contact-info">
+                                <h3>Director of Guest Reception</h3>
+                                <p>Ahmed Khan</p>
+                                <p>Email: <a href="mailto:ahmed.khan@ahmadiyya.us">ahmed.khan@ahmadiyya.us</a></p>
+                                <p>Phone: 765-437-2876</p>
+                            </section>
+                            <section className="services">
+                                <h3>Services Provided</h3>
+                                <ul>
+                                    <li>Registration</li>
+                                    <li>Guided tour</li>
+                                    <li>Information Packet</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
                     <section className="announcements">
                         <h2>Annoucements</h2>
                         <ul>
