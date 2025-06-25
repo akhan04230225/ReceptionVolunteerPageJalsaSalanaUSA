@@ -78,6 +78,8 @@
             margin: 1rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 300px;
+            margin-left: 0;
         }
         /* Expanded slideshow width to fill more horizontal space */
         .slideshow { position: relative; height: 455px; width: 1288px; overflow: hidden; margin: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background:#000; }
@@ -140,24 +142,24 @@
                                 <h3>About</h3>
                                 <p>I am a volunteer coordinating schedules for guest reception at Jalsa USA 2025. This site outlines how I manage communications with confirmed volunteers.</p>
                             </section>
-                            <section className="services">
-                                <h3>Services Provided</h3>
-                                <ul>
-                                    <li>Registration</li>
-                                    <li>Guided tour</li>
-                                    <li>Information Packet</li>
-                                </ul>
-                            </section>
-                        </div>
+                        <section className="services">
+                            <h3>Services Provided</h3>
+                            <ul>
+                                <li>Registration</li>
+                                <li>Guided tour</li>
+                                <li>Information Packet</li>
+                            </ul>
+                        </section>
+                        <section className="announcements">
+                            <h2>Annoucements</h2>
+                            <ul>
+                                <li>Please arrive 15 minutes before your shift.</li>
+                                <li>Check in at the reception desk upon arrival.</li>
+                                <li>Contact your team lead with any questions.</li>
+                            </ul>
+                        </section>
                     </div>
-                    <section className="announcements">
-                        <h2>Annoucements</h2>
-                        <ul>
-                            <li>Please arrive 15 minutes before your shift.</li>
-                            <li>Check in at the reception desk upon arrival.</li>
-                            <li>Contact your team lead with any questions.</li>
-                        </ul>
-                    </section>
+                </div>
                 </div>
             );
         }
