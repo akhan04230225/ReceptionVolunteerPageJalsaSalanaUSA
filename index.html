@@ -82,7 +82,7 @@
             margin-left: 0;
         }
         /* Expanded slideshow width to fill more horizontal space */
-        .slideshow { position: relative; height: 455px; width: 1288px; overflow: hidden; margin: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background:#000; }
+        .slideshow { position: relative; height: 455px; width: 1288px; flex-basis: 100%; overflow: hidden; margin: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background:#000; }
         .slides img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1s ease-in-out; }
         .slides img.active { opacity: 1; }
         .info-block { display: flex; align-items: flex-start; flex-wrap: wrap; }
@@ -130,6 +130,14 @@
                         <section className="slideshow">
                             <SlideShow />
                         </section>
+                        <section className="announcements">
+                            <h2>Annoucements</h2>
+                            <ul>
+                                <li>Please arrive 15 minutes before your shift.</li>
+                                <li>Check in at the reception desk upon arrival.</li>
+                                <li>Contact your team lead with any questions.</li>
+                            </ul>
+                        </section>
                         <div className="right-column">
                             <section className="contact-info">
                                 <h3>Director of Guest Reception</h3>
@@ -148,14 +156,6 @@
                                 <li>Registration</li>
                                 <li>Guided tour</li>
                                 <li>Information Packet</li>
-                            </ul>
-                        </section>
-                        <section className="announcements">
-                            <h2>Annoucements</h2>
-                            <ul>
-                                <li>Please arrive 15 minutes before your shift.</li>
-                                <li>Check in at the reception desk upon arrival.</li>
-                                <li>Contact your team lead with any questions.</li>
                             </ul>
                         </section>
                     </div>
